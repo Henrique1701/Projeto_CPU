@@ -1,0 +1,455 @@
+Simulator report for ProjetoCPU
+Tue Dec 10 17:19:58 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 183 nodes    ;
+; Simulation Coverage         ;      36.07 % ;
+; Total Number of Transitions ; 1956         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      36.07 % ;
+; Total nodes checked                                 ; 183          ;
+; Total output ports checked                          ; 183          ;
+; Total output ports with complete 1/0-value coverage ; 66           ;
+; Total output ports with no 1/0-value coverage       ; 112          ;
+; Total output ports with no 1-value coverage         ; 117          ;
+; Total output ports with no 0-value coverage         ; 112          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                              ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |ProjetoCPU|clk                           ; |ProjetoCPU|clk                           ; out              ;
+; |ProjetoCPU|Tx[0]                         ; |ProjetoCPU|Tx[0]                         ; pin_out          ;
+; |ProjetoCPU|Tx[1]                         ; |ProjetoCPU|Tx[1]                         ; pin_out          ;
+; |ProjetoCPU|Ty[0]                         ; |ProjetoCPU|Ty[0]                         ; pin_out          ;
+; |ProjetoCPU|Ty[1]                         ; |ProjetoCPU|Ty[1]                         ; pin_out          ;
+; |ProjetoCPU|Tz[0]                         ; |ProjetoCPU|Tz[0]                         ; pin_out          ;
+; |ProjetoCPU|Tz[1]                         ; |ProjetoCPU|Tz[1]                         ; pin_out          ;
+; |ProjetoCPU|Tula[0]                       ; |ProjetoCPU|Tula[0]                       ; pin_out          ;
+; |ProjetoCPU|outX[1]                       ; |ProjetoCPU|outX[1]                       ; pin_out          ;
+; |ProjetoCPU|outX[2]                       ; |ProjetoCPU|outX[2]                       ; pin_out          ;
+; |ProjetoCPU|operacao[0]                   ; |ProjetoCPU|operacao[0]                   ; pin_out          ;
+; |ProjetoCPU|operacao[1]                   ; |ProjetoCPU|operacao[1]                   ; pin_out          ;
+; |ProjetoCPU|operacao[2]                   ; |ProjetoCPU|operacao[2]                   ; pin_out          ;
+; |ProjetoCPU|entrada[1]                    ; |ProjetoCPU|entrada[1]                    ; pin_out          ;
+; |ProjetoCPU|Registrador:x|acumulador[1]   ; |ProjetoCPU|Registrador:x|acumulador[1]   ; regout           ;
+; |ProjetoCPU|Registrador:x|acumulador[2]   ; |ProjetoCPU|Registrador:x|acumulador[2]   ; regout           ;
+; |ProjetoCPU|Memoria:memoria|entrada[1]    ; |ProjetoCPU|Memoria:memoria|entrada[1]    ; regout           ;
+; |ProjetoCPU|Memoria:memoria|operacao~0    ; |ProjetoCPU|Memoria:memoria|operacao~0    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|operacao~1    ; |ProjetoCPU|Memoria:memoria|operacao~1    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|WideOr5       ; |ProjetoCPU|Memoria:memoria|WideOr5       ; out0             ;
+; |ProjetoCPU|Memoria:memoria|operacao[0]   ; |ProjetoCPU|Memoria:memoria|operacao[0]   ; regout           ;
+; |ProjetoCPU|Memoria:memoria|operacao[1]   ; |ProjetoCPU|Memoria:memoria|operacao[1]   ; regout           ;
+; |ProjetoCPU|Memoria:memoria|operacao[2]   ; |ProjetoCPU|Memoria:memoria|operacao[2]   ; regout           ;
+; |ProjetoCPU|Controle:controle|WideOr2     ; |ProjetoCPU|Controle:controle|WideOr2     ; out0             ;
+; |ProjetoCPU|Controle:controle|Tx~0        ; |ProjetoCPU|Controle:controle|Tx~0        ; out0             ;
+; |ProjetoCPU|Controle:controle|Ty~0        ; |ProjetoCPU|Controle:controle|Ty~0        ; out0             ;
+; |ProjetoCPU|Controle:controle|WideOr5     ; |ProjetoCPU|Controle:controle|WideOr5     ; out0             ;
+; |ProjetoCPU|Controle:controle|Tula[0]     ; |ProjetoCPU|Controle:controle|Tula[0]     ; regout           ;
+; |ProjetoCPU|Controle:controle|Tula~0      ; |ProjetoCPU|Controle:controle|Tula~0      ; out0             ;
+; |ProjetoCPU|Controle:controle|Tz[0]       ; |ProjetoCPU|Controle:controle|Tz[0]       ; regout           ;
+; |ProjetoCPU|Controle:controle|Tz[1]       ; |ProjetoCPU|Controle:controle|Tz[1]       ; regout           ;
+; |ProjetoCPU|Controle:controle|Ty[0]       ; |ProjetoCPU|Controle:controle|Ty[0]       ; regout           ;
+; |ProjetoCPU|Controle:controle|Ty[1]       ; |ProjetoCPU|Controle:controle|Ty[1]       ; regout           ;
+; |ProjetoCPU|Controle:controle|Tx[0]       ; |ProjetoCPU|Controle:controle|Tx[0]       ; regout           ;
+; |ProjetoCPU|Controle:controle|Tx[1]       ; |ProjetoCPU|Controle:controle|Tx[1]       ; regout           ;
+; |ProjetoCPU|Registrador:x|Selector2~0     ; |ProjetoCPU|Registrador:x|Selector2~0     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector3~0     ; |ProjetoCPU|Registrador:x|Selector3~0     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector3~1     ; |ProjetoCPU|Registrador:x|Selector3~1     ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector0~0   ; |ProjetoCPU|Memoria:memoria|Selector0~0   ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector1~0   ; |ProjetoCPU|Memoria:memoria|Selector1~0   ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector2~0   ; |ProjetoCPU|Memoria:memoria|Selector2~0   ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector3~0   ; |ProjetoCPU|Memoria:memoria|Selector3~0   ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector3~1   ; |ProjetoCPU|Memoria:memoria|Selector3~1   ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector0~0 ; |ProjetoCPU|Controle:controle|Selector0~0 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector1~0 ; |ProjetoCPU|Controle:controle|Selector1~0 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector2~0 ; |ProjetoCPU|Controle:controle|Selector2~0 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector3~0 ; |ProjetoCPU|Controle:controle|Selector3~0 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector4~0 ; |ProjetoCPU|Controle:controle|Selector4~0 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector5~0 ; |ProjetoCPU|Controle:controle|Selector5~0 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector6~0 ; |ProjetoCPU|Controle:controle|Selector6~0 ; out0             ;
+; |ProjetoCPU|Registrador:z|Decoder0~0      ; |ProjetoCPU|Registrador:z|Decoder0~0      ; out0             ;
+; |ProjetoCPU|Registrador:z|Decoder0~1      ; |ProjetoCPU|Registrador:z|Decoder0~1      ; out0             ;
+; |ProjetoCPU|Registrador:y|Decoder0~0      ; |ProjetoCPU|Registrador:y|Decoder0~0      ; out0             ;
+; |ProjetoCPU|Registrador:y|Decoder0~1      ; |ProjetoCPU|Registrador:y|Decoder0~1      ; out0             ;
+; |ProjetoCPU|Registrador:y|Decoder0~2      ; |ProjetoCPU|Registrador:y|Decoder0~2      ; out0             ;
+; |ProjetoCPU|Registrador:x|Decoder0~1      ; |ProjetoCPU|Registrador:x|Decoder0~1      ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~0    ; |ProjetoCPU|Memoria:memoria|Decoder0~0    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~1    ; |ProjetoCPU|Memoria:memoria|Decoder0~1    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~2    ; |ProjetoCPU|Memoria:memoria|Decoder0~2    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~3    ; |ProjetoCPU|Memoria:memoria|Decoder0~3    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~4    ; |ProjetoCPU|Memoria:memoria|Decoder0~4    ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~0  ; |ProjetoCPU|Controle:controle|Decoder0~0  ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~1  ; |ProjetoCPU|Controle:controle|Decoder0~1  ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~2  ; |ProjetoCPU|Controle:controle|Decoder0~2  ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~3  ; |ProjetoCPU|Controle:controle|Decoder0~3  ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~4  ; |ProjetoCPU|Controle:controle|Decoder0~4  ; out0             ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                 ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |ProjetoCPU|Tx[2]                         ; |ProjetoCPU|Tx[2]                         ; pin_out          ;
+; |ProjetoCPU|Tx[3]                         ; |ProjetoCPU|Tx[3]                         ; pin_out          ;
+; |ProjetoCPU|Tx[4]                         ; |ProjetoCPU|Tx[4]                         ; pin_out          ;
+; |ProjetoCPU|Ty[2]                         ; |ProjetoCPU|Ty[2]                         ; pin_out          ;
+; |ProjetoCPU|Ty[3]                         ; |ProjetoCPU|Ty[3]                         ; pin_out          ;
+; |ProjetoCPU|Ty[4]                         ; |ProjetoCPU|Ty[4]                         ; pin_out          ;
+; |ProjetoCPU|Tz[2]                         ; |ProjetoCPU|Tz[2]                         ; pin_out          ;
+; |ProjetoCPU|Tz[3]                         ; |ProjetoCPU|Tz[3]                         ; pin_out          ;
+; |ProjetoCPU|Tz[4]                         ; |ProjetoCPU|Tz[4]                         ; pin_out          ;
+; |ProjetoCPU|Tula[1]                       ; |ProjetoCPU|Tula[1]                       ; pin_out          ;
+; |ProjetoCPU|Tula[2]                       ; |ProjetoCPU|Tula[2]                       ; pin_out          ;
+; |ProjetoCPU|Tula[3]                       ; |ProjetoCPU|Tula[3]                       ; pin_out          ;
+; |ProjetoCPU|Tula[4]                       ; |ProjetoCPU|Tula[4]                       ; pin_out          ;
+; |ProjetoCPU|outULA[0]                     ; |ProjetoCPU|outULA[0]                     ; pin_out          ;
+; |ProjetoCPU|outULA[1]                     ; |ProjetoCPU|outULA[1]                     ; pin_out          ;
+; |ProjetoCPU|outULA[2]                     ; |ProjetoCPU|outULA[2]                     ; pin_out          ;
+; |ProjetoCPU|outULA[3]                     ; |ProjetoCPU|outULA[3]                     ; pin_out          ;
+; |ProjetoCPU|outULA[4]                     ; |ProjetoCPU|outULA[4]                     ; pin_out          ;
+; |ProjetoCPU|outX[0]                       ; |ProjetoCPU|outX[0]                       ; pin_out          ;
+; |ProjetoCPU|outX[3]                       ; |ProjetoCPU|outX[3]                       ; pin_out          ;
+; |ProjetoCPU|outX[4]                       ; |ProjetoCPU|outX[4]                       ; pin_out          ;
+; |ProjetoCPU|outY[0]                       ; |ProjetoCPU|outY[0]                       ; pin_out          ;
+; |ProjetoCPU|outY[1]                       ; |ProjetoCPU|outY[1]                       ; pin_out          ;
+; |ProjetoCPU|outY[2]                       ; |ProjetoCPU|outY[2]                       ; pin_out          ;
+; |ProjetoCPU|outY[3]                       ; |ProjetoCPU|outY[3]                       ; pin_out          ;
+; |ProjetoCPU|outY[4]                       ; |ProjetoCPU|outY[4]                       ; pin_out          ;
+; |ProjetoCPU|outZ[0]                       ; |ProjetoCPU|outZ[0]                       ; pin_out          ;
+; |ProjetoCPU|outZ[1]                       ; |ProjetoCPU|outZ[1]                       ; pin_out          ;
+; |ProjetoCPU|outZ[2]                       ; |ProjetoCPU|outZ[2]                       ; pin_out          ;
+; |ProjetoCPU|outZ[3]                       ; |ProjetoCPU|outZ[3]                       ; pin_out          ;
+; |ProjetoCPU|outZ[4]                       ; |ProjetoCPU|outZ[4]                       ; pin_out          ;
+; |ProjetoCPU|operacao[3]                   ; |ProjetoCPU|operacao[3]                   ; pin_out          ;
+; |ProjetoCPU|operacao[4]                   ; |ProjetoCPU|operacao[4]                   ; pin_out          ;
+; |ProjetoCPU|entrada[0]                    ; |ProjetoCPU|entrada[0]                    ; pin_out          ;
+; |ProjetoCPU|entrada[2]                    ; |ProjetoCPU|entrada[2]                    ; pin_out          ;
+; |ProjetoCPU|entrada[3]                    ; |ProjetoCPU|entrada[3]                    ; pin_out          ;
+; |ProjetoCPU|entrada[4]                    ; |ProjetoCPU|entrada[4]                    ; pin_out          ;
+; |ProjetoCPU|ULA:ula|outULA                ; |ProjetoCPU|ULA:ula|outULA                ; out              ;
+; |ProjetoCPU|Registrador:z|acumulador[0]   ; |ProjetoCPU|Registrador:z|acumulador[0]   ; regout           ;
+; |ProjetoCPU|Registrador:z|acumulador[1]   ; |ProjetoCPU|Registrador:z|acumulador[1]   ; regout           ;
+; |ProjetoCPU|Registrador:z|acumulador[2]   ; |ProjetoCPU|Registrador:z|acumulador[2]   ; regout           ;
+; |ProjetoCPU|Registrador:z|acumulador[3]   ; |ProjetoCPU|Registrador:z|acumulador[3]   ; regout           ;
+; |ProjetoCPU|Registrador:z|acumulador[4]   ; |ProjetoCPU|Registrador:z|acumulador[4]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[0]   ; |ProjetoCPU|Registrador:y|acumulador[0]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[1]   ; |ProjetoCPU|Registrador:y|acumulador[1]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[2]   ; |ProjetoCPU|Registrador:y|acumulador[2]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[3]   ; |ProjetoCPU|Registrador:y|acumulador[3]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[4]   ; |ProjetoCPU|Registrador:y|acumulador[4]   ; regout           ;
+; |ProjetoCPU|Registrador:x|acumulador[0]   ; |ProjetoCPU|Registrador:x|acumulador[0]   ; regout           ;
+; |ProjetoCPU|Registrador:x|acumulador[3]   ; |ProjetoCPU|Registrador:x|acumulador[3]   ; regout           ;
+; |ProjetoCPU|Registrador:x|acumulador[4]   ; |ProjetoCPU|Registrador:x|acumulador[4]   ; regout           ;
+; |ProjetoCPU|Memoria:memoria|WideOr1       ; |ProjetoCPU|Memoria:memoria|WideOr1       ; out0             ;
+; |ProjetoCPU|Controle:controle|WideOr1     ; |ProjetoCPU|Controle:controle|WideOr1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector0~0     ; |ProjetoCPU|Registrador:z|Selector0~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector0~1     ; |ProjetoCPU|Registrador:z|Selector0~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector0~2     ; |ProjetoCPU|Registrador:z|Selector0~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector1~0     ; |ProjetoCPU|Registrador:z|Selector1~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector1~1     ; |ProjetoCPU|Registrador:z|Selector1~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector1~2     ; |ProjetoCPU|Registrador:z|Selector1~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector1~3     ; |ProjetoCPU|Registrador:z|Selector1~3     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector2~0     ; |ProjetoCPU|Registrador:z|Selector2~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector2~1     ; |ProjetoCPU|Registrador:z|Selector2~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector2~2     ; |ProjetoCPU|Registrador:z|Selector2~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector2~3     ; |ProjetoCPU|Registrador:z|Selector2~3     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector3~0     ; |ProjetoCPU|Registrador:z|Selector3~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector3~1     ; |ProjetoCPU|Registrador:z|Selector3~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector3~2     ; |ProjetoCPU|Registrador:z|Selector3~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector3~3     ; |ProjetoCPU|Registrador:z|Selector3~3     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector4~0     ; |ProjetoCPU|Registrador:z|Selector4~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector4~1     ; |ProjetoCPU|Registrador:z|Selector4~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector4~2     ; |ProjetoCPU|Registrador:z|Selector4~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector4~3     ; |ProjetoCPU|Registrador:z|Selector4~3     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector0~0     ; |ProjetoCPU|Registrador:y|Selector0~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector1~0     ; |ProjetoCPU|Registrador:y|Selector1~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector1~1     ; |ProjetoCPU|Registrador:y|Selector1~1     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector1~2     ; |ProjetoCPU|Registrador:y|Selector1~2     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector2~0     ; |ProjetoCPU|Registrador:y|Selector2~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector2~1     ; |ProjetoCPU|Registrador:y|Selector2~1     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector2~2     ; |ProjetoCPU|Registrador:y|Selector2~2     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector3~0     ; |ProjetoCPU|Registrador:y|Selector3~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector3~1     ; |ProjetoCPU|Registrador:y|Selector3~1     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector3~2     ; |ProjetoCPU|Registrador:y|Selector3~2     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector4~0     ; |ProjetoCPU|Registrador:y|Selector4~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector4~1     ; |ProjetoCPU|Registrador:y|Selector4~1     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector4~2     ; |ProjetoCPU|Registrador:y|Selector4~2     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector4~3     ; |ProjetoCPU|Registrador:y|Selector4~3     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector0~0     ; |ProjetoCPU|Registrador:x|Selector0~0     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector1~0     ; |ProjetoCPU|Registrador:x|Selector1~0     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector1~1     ; |ProjetoCPU|Registrador:x|Selector1~1     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector1~2     ; |ProjetoCPU|Registrador:x|Selector1~2     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector2~1     ; |ProjetoCPU|Registrador:x|Selector2~1     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector2~2     ; |ProjetoCPU|Registrador:x|Selector2~2     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector3~2     ; |ProjetoCPU|Registrador:x|Selector3~2     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector3~3     ; |ProjetoCPU|Registrador:x|Selector3~3     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector4~0     ; |ProjetoCPU|Registrador:x|Selector4~0     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector4~1     ; |ProjetoCPU|Registrador:x|Selector4~1     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector4~2     ; |ProjetoCPU|Registrador:x|Selector4~2     ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector0~1   ; |ProjetoCPU|Memoria:memoria|Selector0~1   ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector1~1   ; |ProjetoCPU|Memoria:memoria|Selector1~1   ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector2~1   ; |ProjetoCPU|Memoria:memoria|Selector2~1   ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector0~1 ; |ProjetoCPU|Controle:controle|Selector0~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector1~1 ; |ProjetoCPU|Controle:controle|Selector1~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector2~1 ; |ProjetoCPU|Controle:controle|Selector2~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector3~1 ; |ProjetoCPU|Controle:controle|Selector3~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector4~1 ; |ProjetoCPU|Controle:controle|Selector4~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector5~1 ; |ProjetoCPU|Controle:controle|Selector5~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector6~1 ; |ProjetoCPU|Controle:controle|Selector6~1 ; out0             ;
+; |ProjetoCPU|Registrador:z|Decoder0~2      ; |ProjetoCPU|Registrador:z|Decoder0~2      ; out0             ;
+; |ProjetoCPU|Registrador:x|Decoder0~0      ; |ProjetoCPU|Registrador:x|Decoder0~0      ; out0             ;
+; |ProjetoCPU|Registrador:x|Decoder0~2      ; |ProjetoCPU|Registrador:x|Decoder0~2      ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~5    ; |ProjetoCPU|Memoria:memoria|Decoder0~5    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~6    ; |ProjetoCPU|Memoria:memoria|Decoder0~6    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~7    ; |ProjetoCPU|Memoria:memoria|Decoder0~7    ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~5  ; |ProjetoCPU|Controle:controle|Decoder0~5  ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~6  ; |ProjetoCPU|Controle:controle|Decoder0~6  ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~7  ; |ProjetoCPU|Controle:controle|Decoder0~7  ; out0             ;
+; |ProjetoCPU|ULA:ula|Add0~0                ; |ProjetoCPU|ULA:ula|Add0~0                ; out0             ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                 ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |ProjetoCPU|Tx[2]                         ; |ProjetoCPU|Tx[2]                         ; pin_out          ;
+; |ProjetoCPU|Tx[3]                         ; |ProjetoCPU|Tx[3]                         ; pin_out          ;
+; |ProjetoCPU|Tx[4]                         ; |ProjetoCPU|Tx[4]                         ; pin_out          ;
+; |ProjetoCPU|Ty[2]                         ; |ProjetoCPU|Ty[2]                         ; pin_out          ;
+; |ProjetoCPU|Ty[3]                         ; |ProjetoCPU|Ty[3]                         ; pin_out          ;
+; |ProjetoCPU|Ty[4]                         ; |ProjetoCPU|Ty[4]                         ; pin_out          ;
+; |ProjetoCPU|Tz[2]                         ; |ProjetoCPU|Tz[2]                         ; pin_out          ;
+; |ProjetoCPU|Tz[3]                         ; |ProjetoCPU|Tz[3]                         ; pin_out          ;
+; |ProjetoCPU|Tz[4]                         ; |ProjetoCPU|Tz[4]                         ; pin_out          ;
+; |ProjetoCPU|Tula[1]                       ; |ProjetoCPU|Tula[1]                       ; pin_out          ;
+; |ProjetoCPU|Tula[2]                       ; |ProjetoCPU|Tula[2]                       ; pin_out          ;
+; |ProjetoCPU|Tula[3]                       ; |ProjetoCPU|Tula[3]                       ; pin_out          ;
+; |ProjetoCPU|Tula[4]                       ; |ProjetoCPU|Tula[4]                       ; pin_out          ;
+; |ProjetoCPU|outULA[1]                     ; |ProjetoCPU|outULA[1]                     ; pin_out          ;
+; |ProjetoCPU|outULA[2]                     ; |ProjetoCPU|outULA[2]                     ; pin_out          ;
+; |ProjetoCPU|outULA[3]                     ; |ProjetoCPU|outULA[3]                     ; pin_out          ;
+; |ProjetoCPU|outULA[4]                     ; |ProjetoCPU|outULA[4]                     ; pin_out          ;
+; |ProjetoCPU|outX[0]                       ; |ProjetoCPU|outX[0]                       ; pin_out          ;
+; |ProjetoCPU|outX[3]                       ; |ProjetoCPU|outX[3]                       ; pin_out          ;
+; |ProjetoCPU|outX[4]                       ; |ProjetoCPU|outX[4]                       ; pin_out          ;
+; |ProjetoCPU|outY[0]                       ; |ProjetoCPU|outY[0]                       ; pin_out          ;
+; |ProjetoCPU|outY[1]                       ; |ProjetoCPU|outY[1]                       ; pin_out          ;
+; |ProjetoCPU|outY[2]                       ; |ProjetoCPU|outY[2]                       ; pin_out          ;
+; |ProjetoCPU|outY[3]                       ; |ProjetoCPU|outY[3]                       ; pin_out          ;
+; |ProjetoCPU|outY[4]                       ; |ProjetoCPU|outY[4]                       ; pin_out          ;
+; |ProjetoCPU|outZ[0]                       ; |ProjetoCPU|outZ[0]                       ; pin_out          ;
+; |ProjetoCPU|outZ[1]                       ; |ProjetoCPU|outZ[1]                       ; pin_out          ;
+; |ProjetoCPU|outZ[2]                       ; |ProjetoCPU|outZ[2]                       ; pin_out          ;
+; |ProjetoCPU|outZ[3]                       ; |ProjetoCPU|outZ[3]                       ; pin_out          ;
+; |ProjetoCPU|outZ[4]                       ; |ProjetoCPU|outZ[4]                       ; pin_out          ;
+; |ProjetoCPU|operacao[3]                   ; |ProjetoCPU|operacao[3]                   ; pin_out          ;
+; |ProjetoCPU|operacao[4]                   ; |ProjetoCPU|operacao[4]                   ; pin_out          ;
+; |ProjetoCPU|entrada[0]                    ; |ProjetoCPU|entrada[0]                    ; pin_out          ;
+; |ProjetoCPU|entrada[2]                    ; |ProjetoCPU|entrada[2]                    ; pin_out          ;
+; |ProjetoCPU|entrada[3]                    ; |ProjetoCPU|entrada[3]                    ; pin_out          ;
+; |ProjetoCPU|entrada[4]                    ; |ProjetoCPU|entrada[4]                    ; pin_out          ;
+; |ProjetoCPU|Registrador:z|acumulador[0]   ; |ProjetoCPU|Registrador:z|acumulador[0]   ; regout           ;
+; |ProjetoCPU|Registrador:z|acumulador[1]   ; |ProjetoCPU|Registrador:z|acumulador[1]   ; regout           ;
+; |ProjetoCPU|Registrador:z|acumulador[2]   ; |ProjetoCPU|Registrador:z|acumulador[2]   ; regout           ;
+; |ProjetoCPU|Registrador:z|acumulador[3]   ; |ProjetoCPU|Registrador:z|acumulador[3]   ; regout           ;
+; |ProjetoCPU|Registrador:z|acumulador[4]   ; |ProjetoCPU|Registrador:z|acumulador[4]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[0]   ; |ProjetoCPU|Registrador:y|acumulador[0]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[1]   ; |ProjetoCPU|Registrador:y|acumulador[1]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[2]   ; |ProjetoCPU|Registrador:y|acumulador[2]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[3]   ; |ProjetoCPU|Registrador:y|acumulador[3]   ; regout           ;
+; |ProjetoCPU|Registrador:y|acumulador[4]   ; |ProjetoCPU|Registrador:y|acumulador[4]   ; regout           ;
+; |ProjetoCPU|Registrador:x|acumulador[0]   ; |ProjetoCPU|Registrador:x|acumulador[0]   ; regout           ;
+; |ProjetoCPU|Registrador:x|acumulador[3]   ; |ProjetoCPU|Registrador:x|acumulador[3]   ; regout           ;
+; |ProjetoCPU|Registrador:x|acumulador[4]   ; |ProjetoCPU|Registrador:x|acumulador[4]   ; regout           ;
+; |ProjetoCPU|Memoria:memoria|WideOr1       ; |ProjetoCPU|Memoria:memoria|WideOr1       ; out0             ;
+; |ProjetoCPU|Controle:controle|WideOr1     ; |ProjetoCPU|Controle:controle|WideOr1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector0~0     ; |ProjetoCPU|Registrador:z|Selector0~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector0~1     ; |ProjetoCPU|Registrador:z|Selector0~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector0~2     ; |ProjetoCPU|Registrador:z|Selector0~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector1~0     ; |ProjetoCPU|Registrador:z|Selector1~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector1~1     ; |ProjetoCPU|Registrador:z|Selector1~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector1~2     ; |ProjetoCPU|Registrador:z|Selector1~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector1~3     ; |ProjetoCPU|Registrador:z|Selector1~3     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector2~0     ; |ProjetoCPU|Registrador:z|Selector2~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector2~1     ; |ProjetoCPU|Registrador:z|Selector2~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector2~2     ; |ProjetoCPU|Registrador:z|Selector2~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector2~3     ; |ProjetoCPU|Registrador:z|Selector2~3     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector3~0     ; |ProjetoCPU|Registrador:z|Selector3~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector3~1     ; |ProjetoCPU|Registrador:z|Selector3~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector3~2     ; |ProjetoCPU|Registrador:z|Selector3~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector3~3     ; |ProjetoCPU|Registrador:z|Selector3~3     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector4~0     ; |ProjetoCPU|Registrador:z|Selector4~0     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector4~1     ; |ProjetoCPU|Registrador:z|Selector4~1     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector4~2     ; |ProjetoCPU|Registrador:z|Selector4~2     ; out0             ;
+; |ProjetoCPU|Registrador:z|Selector4~3     ; |ProjetoCPU|Registrador:z|Selector4~3     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector0~0     ; |ProjetoCPU|Registrador:y|Selector0~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector1~0     ; |ProjetoCPU|Registrador:y|Selector1~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector1~1     ; |ProjetoCPU|Registrador:y|Selector1~1     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector1~2     ; |ProjetoCPU|Registrador:y|Selector1~2     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector2~0     ; |ProjetoCPU|Registrador:y|Selector2~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector2~1     ; |ProjetoCPU|Registrador:y|Selector2~1     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector2~2     ; |ProjetoCPU|Registrador:y|Selector2~2     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector3~0     ; |ProjetoCPU|Registrador:y|Selector3~0     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector3~1     ; |ProjetoCPU|Registrador:y|Selector3~1     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector3~2     ; |ProjetoCPU|Registrador:y|Selector3~2     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector4~2     ; |ProjetoCPU|Registrador:y|Selector4~2     ; out0             ;
+; |ProjetoCPU|Registrador:y|Selector4~3     ; |ProjetoCPU|Registrador:y|Selector4~3     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector0~0     ; |ProjetoCPU|Registrador:x|Selector0~0     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector1~0     ; |ProjetoCPU|Registrador:x|Selector1~0     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector1~1     ; |ProjetoCPU|Registrador:x|Selector1~1     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector1~2     ; |ProjetoCPU|Registrador:x|Selector1~2     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector2~1     ; |ProjetoCPU|Registrador:x|Selector2~1     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector2~2     ; |ProjetoCPU|Registrador:x|Selector2~2     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector3~2     ; |ProjetoCPU|Registrador:x|Selector3~2     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector3~3     ; |ProjetoCPU|Registrador:x|Selector3~3     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector4~0     ; |ProjetoCPU|Registrador:x|Selector4~0     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector4~1     ; |ProjetoCPU|Registrador:x|Selector4~1     ; out0             ;
+; |ProjetoCPU|Registrador:x|Selector4~2     ; |ProjetoCPU|Registrador:x|Selector4~2     ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector0~1   ; |ProjetoCPU|Memoria:memoria|Selector0~1   ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector1~1   ; |ProjetoCPU|Memoria:memoria|Selector1~1   ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Selector2~1   ; |ProjetoCPU|Memoria:memoria|Selector2~1   ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector0~1 ; |ProjetoCPU|Controle:controle|Selector0~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector1~1 ; |ProjetoCPU|Controle:controle|Selector1~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector2~1 ; |ProjetoCPU|Controle:controle|Selector2~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector3~1 ; |ProjetoCPU|Controle:controle|Selector3~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector4~1 ; |ProjetoCPU|Controle:controle|Selector4~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector5~1 ; |ProjetoCPU|Controle:controle|Selector5~1 ; out0             ;
+; |ProjetoCPU|Controle:controle|Selector6~1 ; |ProjetoCPU|Controle:controle|Selector6~1 ; out0             ;
+; |ProjetoCPU|Registrador:z|Decoder0~2      ; |ProjetoCPU|Registrador:z|Decoder0~2      ; out0             ;
+; |ProjetoCPU|Registrador:x|Decoder0~2      ; |ProjetoCPU|Registrador:x|Decoder0~2      ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~5    ; |ProjetoCPU|Memoria:memoria|Decoder0~5    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~6    ; |ProjetoCPU|Memoria:memoria|Decoder0~6    ; out0             ;
+; |ProjetoCPU|Memoria:memoria|Decoder0~7    ; |ProjetoCPU|Memoria:memoria|Decoder0~7    ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~5  ; |ProjetoCPU|Controle:controle|Decoder0~5  ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~6  ; |ProjetoCPU|Controle:controle|Decoder0~6  ; out0             ;
+; |ProjetoCPU|Controle:controle|Decoder0~7  ; |ProjetoCPU|Controle:controle|Decoder0~7  ; out0             ;
+; |ProjetoCPU|ULA:ula|Add0~0                ; |ProjetoCPU|ULA:ula|Add0~0                ; out0             ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Tue Dec 10 17:19:58 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ProjetoCPU -c ProjetoCPU
+Info: Using vector source file "E:/Users/jhfs/Documents/ProjetoCPU/ProjetoCPU.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      36.07 %
+Info: Number of transitions in simulation is 1956
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4317 megabytes
+    Info: Processing ended: Tue Dec 10 17:19:59 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

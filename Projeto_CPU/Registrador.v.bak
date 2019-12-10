@@ -1,0 +1,6 @@
+module Registrador ();
+	input wire clk;
+	input wire [4:0]entrada, Tx, Ty, Tz, [4:0]ULAout, [4:0]acumulador;
+	output reg 
+
+endmodule 
